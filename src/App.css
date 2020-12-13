@@ -36,3 +36,81 @@
     transform: rotate(360deg);
   }
 }
+
+div.container {
+  width: 96%;
+  max-width: 960px;
+  margin: 0 auto; /* to center the container */
+  height: 100;
+}
+.banner {
+  width: 100%;
+  height: auto;
+}
+
+div {
+  text-align: center;
+}
+
+h1 {
+  color: green;
+}
+
+.bottom-three {
+  margin-bottom: 3cm;
+}
+.top-three {
+  margin-top: 3cm;
+}
+
+.review {
+  background: var(--clr-white);
+  padding: 1.5rem 2rem;
+  border-radius: var(--radius);
+  box-shadow: var(--light-shadow);
+  transition: var(--transition);
+  text-align: center;
+}
+.review:hover {
+  box-shadow: var(--dark-shadow);
+}
+
+.img-container {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-bottom: 1.5rem;
+}
+.person-img {
+  width: 100%;
+  display: block;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  position: relative;
+}
+
+.img-container::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: var(--clr-primary-5);
+  position: absolute;
+  top: -0.25rem;
+  right: -0.5rem;
+  border-radius: 50%;
+}
+.author {
+  margin-bottom: 0.25rem;
+}
+.job {
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  color: var(--clr-primary-5);
+  font-size: 0.85rem;
+}
+.info {
+  margin-bottom: 0.75rem;
+}
